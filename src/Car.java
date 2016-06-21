@@ -3,6 +3,7 @@ public class Car extends Vehicle{
 	private String color;
 	private String model;
 	private int speed;
+	private Admiral a;
 	
 	public Car(){
 		color = "Blue";
@@ -51,4 +52,14 @@ public class Car extends Vehicle{
 		System.out.println("The " + color + " " + model + " stops");
 	}
 	
+	public void driver(){
+		System.out.println("The " + color + " " + model + " is driven by " + this.getDriver().getName());
+	}
+	
+	public void setDriver(Admiral ad){
+		a = ad;
+	}
+	public Admiral getDriver(){
+		return a;
+	}
 }

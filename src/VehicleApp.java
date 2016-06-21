@@ -5,7 +5,11 @@ public class VehicleApp {
 		
 		Car c = new Car();
 		Car d = new Car("Green", "Dodge");
+		Admiral b = new Admiral();
+		b.setName("Bob");
+		c.setDriver(b);
 		
+		c.driver();
 		c.run();
 		d.run();
 		c.accelerate();
